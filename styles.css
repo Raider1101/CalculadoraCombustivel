@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+p {
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    input, button {
+        width: 100%;
+    }
+}
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --button-bg: #5cb85c;
+    --button-hover-bg: #4cae4c;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--button-bg);
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+
+h1 {
+    color: var(--title-color);
+}
+
+.dark-theme {
+    --background-color: #000000;
+    --text-color: #f4f4f4;
+    --button-bg: #444;
+    --button-hover-bg: #555;
+    --title-color: #f4f4f4;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+input {
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 2px solid #5cb85c;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px; 
+    outline: none; 
+}
+
